@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="../css/shared.css">
+	<link rel="stylesheet" href="../css/buttons.css">
+	<link rel="stylesheet" href="../css/landing.css">
+	<link rel="stylesheet" href="../css/home.css">
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<script src="../javascript/shared.js"></script>
+	<script src="../javascript/home.js"></script>
+	<link rel="stylesheet" href="../assets/fontawesome/css/font-awesome.min.css">
+</head>
+<body onload="HomeOnLoad()">
+	<main id="home">
+		<header class="header" id="header-home">
+			<div id="header-logo">
+				<img src="../assets/logo.png">
+			</div>
+			<div id="header-menu" onclick="OpenSidebar()">
+				<i class="fa fa-bars"></i>
+				<p>MENU</p>
+			</div>	
+		</header>	
+		<section id="hello-message">
+			<h3>Ciao Gruppo9</h3>
+			<h4>3470011999</h4>
+		</section>
+		<section id="home-counters">
+			<div class="counter-overlay-closed">
+				<div class="close-counter-overlay" onclick="CloseCounterOverlay()">
+					<i class="fa fa-times"></i>
+				</div>
+				<div class="counter-overlay-content">
+
+				</div>
+			</div>
+			<div class="counter focused-counter">
+				<div class="counter small-counter info-small-counter" onclick="OpenCounterOverlay()">
+					<i class="fa fa-plus"></i>
+				</div>
+				<div class="counter-content">
+					<p class="counter-text-small">Hai ancora</p>
+					<p class="counter-text-big">12.53€</p>
+				</div>
+			</div>
+			<div class="counter small-counter focused-small-counter first-small-counter small-counter-focused" onclick="FocusCounter(1)">
+				<div class="counter-content">
+					<p>Credito</p>
+				</div>
+			</div>
+			<div class="counter small-counter second-small-counter" onclick="FocusCounter(2)">
+				<div class="counter-content">
+					<p>Minuti</p>
+				</div>
+			</div>
+			<div class="counter small-counter third-small-counter" onclick="FocusCounter(3)">
+				<div class="counter-content">
+					<p>SMS</p>
+				</div>
+			</div>
+			<div class="counter small-counter fourth-small-counter" onclick="FocusCounter(4)">
+				<div class="counter-content">
+					<p>Giga</p>
+				</div>
+			</div>
+		</section>	
+		<section id="home-happy">
+		<div id="happy-logo">
+			<img src="../assets/happy.png" alt="Vodafone Happy">
+		</div>
+		<div id="happy-text">
+			<p><span id="happy-number">700</span><span id="happy-description"> sorrisi</span></p>
+		</div>
+		</section>
+		<section id="home-help">
+			<button type="button" class="button white-button large-button" onclick="GoToHelp()">Serve aiuto?</button>
+		</section>
+	</main>
+	<div class="sidebar-hide"></div>
+	<aside>
+		<ul id="sidebar-top">
+			<li class="sidebar-item"><p>3770011223</p></li>
+			<li class="sidebar-item">
+				<i class="fa fa-envelope-o"></i>
+				<p>Notifiche</p>
+			</li>
+			<li class="sidebar-item sidebar-selected">
+				<i class="fa fa-home"></i>
+				<p>Home</p>
+			</li>
+			<ul class="sidebar-item">
+				<i class="fa fa-smile-o"></i>
+				<p>Vodafone Happy</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+			<li class="sidebar-item">
+				<i class="fa fa-user-plus"></i>
+				<p>Porta i tuoi amici</p>
+			</li>
+			<ul class="sidebar-item">
+				<i class="fa fa-star-o"></i>
+				<p>Offerte</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+			<ul class="sidebar-item">
+				<i class="fa fa-trophy"></i>
+				<p>Ricarica&amp;Gioca</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+			<li class="sidebar-item">
+				<i class="fa fa-file-text-o"></i>
+				<p>Spesa e traffico</p>
+			</li>
+			<ul class="sidebar-item">
+				<i class="fa fa-check"></i>
+				<p>Soddisfatti o rimborsati</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+			<li class="sidebar-item">
+				<i class="fa fa-plane"></i>
+				<p>Estero</p>
+			</li>
+			<ul class="sidebar-item">
+				<i class="fa fa-comments-o"></i>
+				<p>Assistenza e supporto</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+		</ul>
+		<ul id="sidebar-bottom">
+			<li class="sidebar-item">
+				<i class="fa fa-cog"></i>
+				<p>Impostazioni</p>
+			</li>
+			<li class="sidebar-item">
+				<i class="fa fa-sign-out"></i>
+				<p>Esci</p>
+			</li>
+		</ul>
+	</aside>
+</body>
+</html>

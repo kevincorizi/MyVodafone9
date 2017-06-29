@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="../css/shared.css">
+	<link rel="stylesheet" href="../css/buttons.css">
+	<link rel="stylesheet" href="../css/landing.css">
+	<link rel="stylesheet" href="../css/help.css">
+	<link rel="stylesheet" href="../css/sidebar.css">
+	<script src="../javascript/shared.js"></script>
+	<script src="../javascript/help.js"></script>
+	<link rel="stylesheet" href="../assets/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+	<main id="help">
+		<header class="header" id="header-home">
+			<div id="header-logo" onclick="location.href='./home.html'">
+				<img src="../assets/logo.png">
+			</div>
+			<div id="header-menu" onclick="OpenSidebar()">
+				<i class="fa fa-bars"></i>
+				<p>MENU</p>
+			</div>	
+		</header>	
+		<section id="help-list">
+			<div id="help-hello-message">
+				<p id="help-hello-message-text">Come posso aiutarti?</p>
+			</div>
+			<div id="help-input-box">
+				<div id="help-input-text">
+					<input type="text" placeholder="Ho finito i Giga"/>
+				</div>
+				<div id="help-input-voice">
+					<i class="fa fa-microphone"></i>
+				</div>
+			</div>
+			<div id="help-faq-list">
+				<div id="help-faq-list-title">
+					<p>Ricerche frequenti</p>
+				</div>
+				<div class="help-faq help-faq-closed">
+					<div class="help-faq-header" onclick="ExpandHelp()">
+						<p>Ho finito i Giga</p>		
+						<i class="fa fa-angle-down"></i>	
+					</div>
+					<div class="help-faq-content">
+						<p>Vuoi aggiungere dei Giga alla tua offerta?</p>
+						<p class="help-faq-ad">Vodafone Shake è l'offerta più adatta alle tue esigenze!</p>
+						<button class="faq-redirect-button">Maggiori informazioni</button>
+						<div class="help-faq-vote">
+							<div class="help-faq-your-vote">
+								<p>Questa risposta ti è stata utile?</p>
+								<button class="faq-button" onclick="VoteAnswerYes(0)">Si</button>
+								<button class="faq-button" onclick="VoteAnswerNo(0)">No</button>
+							</div>
+							<div class="help-faq-other-votes">
+								<p><span class="help-faq-positive-votes">1343 persone</span> hanno trovato utile questa risposta</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="help-faq help-faq-closed">
+					<div class="help-faq-header" onclick="ExpandHelp()">
+						<p>Quanti minuti ho?</p>		
+						<i class="fa fa-angle-down"></i>	
+					</div>
+					<div class="help-faq-content">
+						<p>Hai ancora 312 minuti.</p>
+						<p class="help-faq-ad">Con Vodafone RED hai minuti e SMS illimitati. Vuoi saperne di più?</p>
+						<button class="faq-redirect-button">Clicca qui</button>
+						<div class="help-faq-vote">
+							<div class="help-faq-your-vote">
+								<p>Questa risposta ti è stata utile?</p>
+								<button class="faq-button" onclick="VoteAnswerYes(0)">Si</button>
+								<button class="faq-button" onclick="VoteAnswerNo(0)">No</button>
+							</div>
+							<div class="help-faq-other-votes">
+								<p><span class="help-faq-positive-votes">1343 persone</span> hanno trovato utile questa risposta</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="help-faq help-faq-closed">
+					<div class="help-faq-header" onclick="ExpandHelp()">
+						<p>Non riesco a navigare</p>		
+						<i class="fa fa-angle-down"></i>	
+					</div>
+					<div class="help-faq-content">
+						<p>Ci dispiace molto che tu stia riscontrando problemi di linea.</p>
+						<p>Proviamo a risolvere insieme!</p>
+						<ul>
+							<li>Assicurati di avere ancora a disposizione Giga da utilizzare.</li>
+							<li>Controlla nelle impostazioni del tuo smartphone se la rete dati è attivata.
+								In genere, è possibile abilitare e disabilitare la rete dati dal menu delle notifiche.</li>
+							<li>Se sei in una zona molto affollata è possibile che la qualità del servizio non sia ottimale.</li>
+							<li>Prova a riavviare il tuo smartphone</li>
+						</ul>
+						<p>Se nessuno dei suggerimenti ha funzionato, contatta il nostro servizio clienti su Facebook o Twitter. Un operatore ti darà una mano a risolvere il problema.</p>
+						<div class="help-faq-vote">
+							<div class="help-faq-your-vote">
+								<p>Questa risposta ti è stata utile?</p>
+								<button class="faq-button" onclick="VoteAnswerYes(0)">Si</button>
+								<button class="faq-button" onclick="VoteAnswerNo(0)">No</button>
+							</div>
+							<div class="help-faq-other-votes">
+								<p><span class="help-faq-positive-votes">27812 persone</span> hanno trovato utile questa risposta</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="help-faq help-faq-closed">
+					<div class="help-faq-header">
+
+					</div>
+					<div class="help-faq-content">
+
+					</div>
+				</div>
+			</div>
+		</section>	
+	</main>
+	<aside>
+		<ul id="sidebar-top">
+			<li class="sidebar-item"><p>3770011223</p></li>
+			<li class="sidebar-item">
+				<i class="fa fa-envelope-o"></i>
+				<p>Notifiche</p>
+			</li>
+			<li class="sidebar-item">
+				<i class="fa fa-home"></i>
+				<p>Home</p>
+			</li>
+			<ul class="sidebar-item">
+				<i class="fa fa-smile-o"></i>
+				<p>Vodafone Happy</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+			<li class="sidebar-item">
+				<i class="fa fa-user-plus"></i>
+				<p>Porta i tuoi amici</p>
+			</li>
+			<ul class="sidebar-item">
+				<i class="fa fa-star-o"></i>
+				<p>Offerte</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+			<ul class="sidebar-item">
+				<i class="fa fa-trophy"></i>
+				<p>Ricarica&amp;Gioca</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+			<li class="sidebar-item">
+				<i class="fa fa-file-text-o"></i>
+				<p>Spesa e traffico</p>
+			</li>
+			<ul class="sidebar-item">
+				<i class="fa fa-check"></i>
+				<p>Soddisfatti o rimborsati</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+			<li class="sidebar-item">
+				<i class="fa fa-plane"></i>
+				<p>Estero</p>
+			</li>
+			<ul class="sidebar-item sidebar-selected">
+				<i class="fa fa-comments-o"></i>
+				<p>Assistenza e supporto</p>
+				<i class="fa fa-angle-down"></i>
+			</ul>
+		</ul>
+		<ul id="sidebar-bottom">
+			<li class="sidebar-item">
+				<i class="fa fa-cog"></i>
+				<p>Impostazioni</p>
+			</li>
+			<li class="sidebar-item">
+				<i class="fa fa-sign-out"></i>
+				<p>Esci</p>
+			</li>
+		</ul>
+	</aside>
+</body>
+</html>

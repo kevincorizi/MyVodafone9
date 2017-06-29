@@ -1,0 +1,206 @@
+#hello-message {
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: 2% 0;
+	border-radius: 5px;
+	margin-bottom: 1%;
+}
+
+#home-counters {
+	position: relative;
+	width: 100%;
+	padding: 5% 0;
+	margin: 5% 0;
+	height: 320px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.counter-overlay-closed {
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	left: 50%;
+	top: 37%;
+	border-radius: 50%;
+	background-color: white;
+	z-index: 2;
+	transition: width 0.5s linear, height 0.5s linear, left 0.5s linear, top 0.5s linear;
+	overflow: hidden;
+}
+
+.counter-overlay-open {
+	width: 150%;
+	height: 150%;
+	left: -25%;
+	top: -30%;
+}
+
+.close-counter-overlay {
+	position: absolute;
+	color: red;
+	top: 22%;
+	right: 20%;
+	font-size: 40px;
+	overflow: hidden;
+	z-index:  2;
+}
+
+.counter-overlay-content{
+	width: 66.666666666%;
+	height: 66.66666666666%;
+	position: absolute;
+	top: 20%;
+	left: 16.6666666%;
+}
+
+.counter {
+	border-radius: 50%;
+	border: 10px solid white;
+	position: absolute;
+}
+
+.counter-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.counter-content p {
+	margin: 0;
+}
+
+.focused-counter {
+	width: 60%;
+	padding-top: calc(60% - 20px);
+	position: relative;
+	margin: auto;
+	border: 10px solid white;
+	color: white;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.focused-counter .counter-text-big {
+	font-size: 50px;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+.focused-counter p {
+	text-shadow: 3px 3px 5px black;
+}
+
+.small-counter {
+	width: 20%;
+	padding-top: calc(20% - 6px);
+	border: 3px solid white;
+	background-color: rgba(255,255,255,0.2);
+	color: white;
+
+}
+
+.info-small-counter {
+	right: -10px;
+	top: -10px;
+	width: 20%;
+	padding-top: calc(20% - 6px);
+	background-color: white;
+	color: red;
+}
+
+.info-small-counter i {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-size: 20px;
+	margin-top: 6px;
+}
+
+.small-counter p {
+	font-weight: bold;
+}
+
+.small-counter-focused {
+	background-color: white;
+	color: red;
+}
+
+.first-small-counter {
+	margin-left: 6%;
+	margin-top: -10%;
+}
+
+.second-small-counter {
+	margin-left: 25%;
+	margin-top: 3%;
+}
+
+.third-small-counter {
+	margin-left: 48%;
+	margin-top: 3%;
+}
+
+.fourth-small-counter {
+	margin-left: 69%;
+	margin-top: -9%;
+}
+
+#home-help {
+
+}
+
+#home-help button{
+	border-radius: 5px;
+	width: 100%;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 30px;
+}
+
+#home-happy {
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+#happy-logo {
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
+
+#happy-logo img {
+	max-width: 100%;
+}
+
+#happy-text {
+	display: inline-block;
+	float: right;
+	width: 50%;
+	color: white;
+	font-size: 30px;
+	text-align: right;
+}
+
+#happy-text p {
+	margin: 0;
+}
+
+#happy-number {
+	font-weight: bold;
+}
+
+#happy-description {
+
+}

@@ -1,0 +1,26 @@
+.button {
+	background: none;
+	outline: none;
+	box-shadow: black 0px 0px 0px 0px;
+	border: none;
+	padding: 5% 20%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.button:active {
+	box-shadow: black 0px 0px 15px 0px;
+}
+
+.white-button {
+	background-color: white;
+	color: red;
+}
+
+.large-button {
+	
+}
+
+.round-button {
+
+}
