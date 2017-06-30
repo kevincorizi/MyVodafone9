@@ -1,5 +1,6 @@
 var totImgs = 7;
-var curImg = 0;
+var curImg = 1;
+var images = [];
 
 function HomeOnLoad() {
 	Carousel();
@@ -7,10 +8,28 @@ function HomeOnLoad() {
 }
 
 function Carousel() {
+	PreloadImages();
 	setInterval(function() {
-		document.getElementsByTagName('main')[0].style.backgroundImage = "url('../assets/back" + curImg + ".jpg')";
+		var main = document.getElementsByTagName('main')[0];
+		var pointer = "url(\'" + images[curImg].toString() + "\')";
+		main.style.backgroundImage = pointer;
 		curImg = (curImg + 1) % totImgs;
-	}, 10000);
+	}, 5000);
+}
+
+function PreloadImages() {
+	var imageObj = new Image();
+    images[0] = '../assets/back0.jpg';
+    images[1] = '../assets/back1.jpg';
+    images[2] = '../assets/back2.jpg';
+    images[3] = '../assets/back3.jpg';
+    images[4] = '../assets/back4.jpg';
+    images[5] = '../assets/back5.jpg';
+    images[6] = '../assets/back6.jpg';
+
+    for (var i = 0; i < images.length; i++) {
+        imageObj.src = images[i];
+    }
 }
 
 function FocusCounter(index) {
