@@ -8,7 +8,7 @@ function HomeOnLoad() {
 
 function Carousel() {
 	setInterval(function() {
-		document.getElementsByTagName('main')[0].style.background = "linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../assets/back" + curImg + ".jpg')";
+		document.getElementsByTagName('main')[0].style.backgroundImage = "url('../assets/back" + curImg + ".jpg')";
 		curImg = (curImg + 1) % totImgs;
 	}, 10000);
 }

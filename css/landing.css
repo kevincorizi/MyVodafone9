@@ -1,36 +1,75 @@
 #landing {
 	background-color: red;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* align-items: center; */
+	/* justify-content: center; */
+	padding-top: 50%;
 }
 
 #landing-logo {
 	width: 50%;
 	text-align: center;
 	position: relative;
+	/* overflow: hidden; */
+	padding-top: 50%;
+	margin: auto;
 }
 
 #landing-logo-wrapper {
 	border-radius: 50%;
-	border: 10px solid gray;
-	border-top: 10px solid white;
-	animation: spin 2s linear infinite;
 	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
 }
 
-@keyframes spin {
-	0% {transform: rotate(0deg);}
-	100% {transform: rotate(360deg);}
+.circular {
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
+
+.path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  animation: dash 2s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke: white;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -144px;
+  }
+}
+
 
 #landing-logo img {
-	padding: 10px;
+	/* padding: 10px; */
 	max-width: 100%;
 }
 
@@ -38,7 +77,9 @@
 	color: white;
 	font-size: 40px;
 	font-weight: bold;
-	margin: 20px 0;
+	/* margin: 20px 0; */
+	margin: auto;
+	text-align: center;
 }
 
 #landing-text p {
@@ -47,7 +88,12 @@
 
 #landing-button {
 	width: 80%;
-	text-align: center;
+	/* text-align: center; */
+	/* margin-top: 0px; */
+	/* margin: auto; */
+	bottom: 30px;
+	position: absolute;
+	left: 10%;
 }
 
 #landing-button button{

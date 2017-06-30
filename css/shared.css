@@ -2,7 +2,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: sans-serif;
+	font-family: font125598, sans-serif;
+	letter-spacing: 1px;
 }
 
 html {
@@ -33,10 +34,10 @@ main {
 	padding: 3%;
 	text-align: center;
 	min-height: 100%;
-	background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../assets/back0.jpg');
+	background-image: url('../assets/back0.jpg');
 	background-attachment: fixed;
 	background-size: cover;
-	transition: background 0.5s linear;
+	transition: background-image 0.5s linear;
 }
 
 .fullscreen {
