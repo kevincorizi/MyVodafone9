@@ -1,7 +1,7 @@
 var isGoToHelp = false;
 
 function IndexOnLoad() {
-	//SetLandingTimer();
+	SetLandingTimer();
 }
 
 function SetLandingTimer() {
