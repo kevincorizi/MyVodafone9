@@ -11,24 +11,20 @@ function Carousel() {
 	PreloadImages();
 	setInterval(function() {
 		var main = document.getElementsByTagName('main')[0];
-		var pointer = "url(\'" + images[curImg].toString() + "\')";
+		var pointer = "url(\'" + images[curImg].src + "\')";
 		main.style.backgroundImage = pointer;
 		curImg = (curImg + 1) % totImgs;
 	}, 5000);
 }
 
 function PreloadImages() {
-	var imageObj = new Image();
-    images[0] = '../assets/back0.jpg';
-    images[1] = '../assets/back1.jpg';
-    images[2] = '../assets/back2.jpg';
-    images[3] = '../assets/back3.jpg';
-    images[4] = '../assets/back4.jpg';
-    images[5] = '../assets/back5.jpg';
-    images[6] = '../assets/back6.jpg';
+    for (var i = 0; i < 10; i++) {
+    	images[i] = new Image();
+    	images[i].src = "../assets/back" + i +  ".jpg";
+    }
 
     for (var i = 0; i < images.length; i++) {
-        imageObj.src = images[i];
+    	console.log(images[i]);
     }
 }
 
