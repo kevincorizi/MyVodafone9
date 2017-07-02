@@ -18,13 +18,9 @@ function Carousel() {
 }
 
 function PreloadImages() {
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < totImgs; i++) {
     	images[i] = new Image();
     	images[i].src = "../assets/back" + i +  ".jpg";
-    }
-
-    for (var i = 0; i < images.length; i++) {
-    	console.log(images[i]);
     }
 }
 

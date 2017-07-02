@@ -12,6 +12,10 @@ function ExpandHelp(e) {
     	other.classList.add("help-faq-closed");
     	other.getElementsByTagName("i")[0].style.transform = "rotate(0deg)";
     }
+    
+    if (target.isSameNode(other)) {
+    	return;
+    }
 
 	if(target.classList.contains("help-faq-closed")) {
 		target.classList.remove("help-faq-closed");
