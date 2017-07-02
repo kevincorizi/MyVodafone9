@@ -33,7 +33,7 @@ function FocusCounter(index) {
 	var present = document.getElementsByClassName("small-counter-focused")[0];
 
 	if(present == all[index]) {
-		// E' già selezionato, stai buono
+		// E' gi&agrave; selezionato, stai buono
 		return;
 	}
 
@@ -52,7 +52,7 @@ function UpdateBigCounter(index) {
 	switch(index) {
 		case 1: 	// Credito
 			counterSmallText.innerHTML = "Hai ancora";
-			counterBigText.innerHTML = "12.53€";
+			counterBigText.innerHTML = "12.53&euro;";
 			counterPlus.style.visibility = "visible";
 			break;
 		case 2: 	// Minuti
