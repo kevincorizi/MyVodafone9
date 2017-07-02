@@ -51,29 +51,8 @@
 						<div class="help-faq-vote">
 							<div class="help-faq-your-vote">
 								<p>Questa risposta ti è stata utile?</p>
-								<button class="faq-button" onclick="VoteAnswerYes(0)">Si</button>
-								<button class="faq-button" onclick="VoteAnswerNo(0)">No</button>
-							</div>
-							<div class="help-faq-other-votes">
-								<p><span class="help-faq-positive-votes">1343 persone</span> hanno trovato utile questa risposta</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="help-faq help-faq-closed">
-					<div class="help-faq-header" onclick="ExpandHelp()">
-						<p>Quanti minuti ho?</p>		
-						<i class="fa fa-angle-down"></i>	
-					</div>
-					<div class="help-faq-content">
-						<p>Hai ancora 312 minuti.</p>
-						<p class="help-faq-ad">Con Vodafone RED hai minuti e SMS illimitati. Vuoi saperne di più?</p>
-						<button class="faq-redirect-button">Clicca qui</button>
-						<div class="help-faq-vote">
-							<div class="help-faq-your-vote">
-								<p>Questa risposta ti è stata utile?</p>
-								<button class="faq-button" onclick="VoteAnswerYes(0)">Si</button>
-								<button class="faq-button" onclick="VoteAnswerNo(0)">No</button>
+								<button class="faq-button" onclick="VoteAnswerYes()">Si</button>
+								<button class="faq-button" onclick="VoteAnswerNo()">No</button>
 							</div>
 							<div class="help-faq-other-votes">
 								<p><span class="help-faq-positive-votes">1343 persone</span> hanno trovato utile questa risposta</p>
@@ -100,8 +79,8 @@
 						<div class="help-faq-vote">
 							<div class="help-faq-your-vote">
 								<p>Questa risposta ti è stata utile?</p>
-								<button class="faq-button" onclick="VoteAnswerYes(0)">Si</button>
-								<button class="faq-button" onclick="VoteAnswerNo(0)">No</button>
+								<button class="faq-button" onclick="VoteAnswerYes()">Si</button>
+								<button class="faq-button" onclick="VoteAnswerNo()">No</button>
 							</div>
 							<div class="help-faq-other-votes">
 								<p><span class="help-faq-positive-votes">27812 persone</span> hanno trovato utile questa risposta</p>
@@ -110,15 +89,49 @@
 					</div>
 				</div>
 				<div class="help-faq help-faq-closed">
-					<div class="help-faq-header">
-
+					<div class="help-faq-header" onclick="ExpandHelp()">
+						<p>Quanti minuti ho?</p>		
+						<i class="fa fa-angle-down"></i>	
 					</div>
 					<div class="help-faq-content">
-
+						<p>Controlla nella home lo stato delle tue soglie.</p>
+						<div class="help-faq-vote">
+							<div class="help-faq-your-vote">
+								<p>Questa risposta ti è stata utile?</p>
+								<button class="faq-button" onclick="VoteAnswerYes()">Si</button>
+								<button class="faq-button" onclick="VoteAnswerNo()">No</button>
+							</div>
+							<div class="help-faq-other-votes">
+								<p><span class="help-faq-positive-votes">12 persone</span> hanno trovato utile questa risposta</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>	
+		<div id="vote-answer-overlay">
+			<div id="vote-answer-no" class="vote-answer-result">
+				<p><strong>Grazie!</strong></p>
+				<div class="vote-answer-image">
+					<img src="../assets/check.png">
+				</div>
+				<p>Riuscire a risolvere i tuoi problemi è la nostra soddisfazione più grande!</p>
+				<p>Il tuo aiuto ci permette di migliorare la qualità delle nostre risposte.</p>
+				<p>Usa l'area "<strong>Serve aiuto</strong>" ogni volta che ne hai bisogno.</p>
+				<button class="button" onclick="CloseAnswerYes()">Chiudi</button>
+			</div>
+			<div id="vote-answer-yes" class="vote-answer-result">
+				<p><strong>Grazie!</strong></p>
+				<div class="vote-answer-image">
+					<img src="../assets/check.png">
+				</div>
+				<p>Ci dispiace di non essere riusciti a risolvere il tuo problema.</p>
+				<p>Se vuoi, aiutaci a migliorare il nostro servizio con un breve commento:</p>
+				<textarea placeholder="Scrivi un breve commento..."></textarea>
+				<p>Usa l'area "<strong>Serve aiuto</strong>" ogni volta che ne hai bisogno.</p>
+				<button class="button" onclick="CloseAnswerNo()">Chiudi</button>
+			</div>
+		</div>
 	</main>
 	<aside>
 		<ul id="sidebar-top">
