@@ -15,7 +15,7 @@
 <body onload="HomeOnLoad()">
 	<main id="home">
 		<header class="header" id="header-home">
-			<div id="header-logo">
+			<div id="header-logo" onclick="location.href='./loading.html'">
 				<img src="../assets/logo.png">
 			</div>
 			<div id="header-menu" onclick="OpenSidebar()">
@@ -33,7 +33,18 @@
 					<i class="fa fa-times"></i>
 				</div>
 				<div class="counter-overlay-content">
-
+					<p>Periodo dal <strong>6 Giugno al 6 Luglio</strong></p>
+					<div class="spesa-totale">
+						<p>Spesa totale</p>
+						<div class="spesa-totale-circle">
+							<p>17,35€</p>
+						</div>
+					</div>
+					<div class="attivazione-rinnovo">
+						<p>Il prossimo addebito è il 7 Luglio.</p>
+						<p>Ricarica ora per mantenere attiva la tua offerta!</p>
+						<button class="button ricarica-button">Ricarica</button>
+					</div>
 				</div>
 			</div>
 			<div class="counter focused-counter">

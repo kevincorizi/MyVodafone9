@@ -47,23 +47,28 @@ function UpdateBigCounter(index) {
 	counter = document.getElementsByClassName("focused-counter")[0];
 	counterSmallText = counter.getElementsByClassName("counter-text-small")[0];
 	counterBigText = counter.getElementsByClassName("counter-text-big")[0];
+	counterPlus = counter.getElementsByClassName("info-small-counter")[0];
 
 	switch(index) {
 		case 1: 	// Credito
 			counterSmallText.innerHTML = "Hai ancora";
 			counterBigText.innerHTML = "12.53€";
+			counterPlus.style.visibility = "visible";
 			break;
 		case 2: 	// Minuti
 			counterSmallText.innerHTML = "Hai ancora";
 			counterBigText.innerHTML = "312 minuti";
+			counterPlus.style.visibility = "hidden";
 			break;
 		case 3: 	// SMS
 			counterSmallText.innerHTML = "Hai ancora";
 			counterBigText.innerHTML = "53 SMS";
+			counterPlus.style.visibility = "hidden";
 			break;
 		case 4: 	// Giga
 			counterSmallText.innerHTML = "Hai ancora";
 			counterBigText.innerHTML = "7.12GB";
+			counterPlus.style.visibility = "hidden";
 			break;
 	}
 }

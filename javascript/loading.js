@@ -1,6 +1,6 @@
 var isGoToHelp = false;
 
-function IndexOnLoad() {
+function LoadingOnLoad() {
 	SetLandingTimer();
 }
 
